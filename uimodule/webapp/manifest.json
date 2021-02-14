@@ -74,9 +74,7 @@
         {
           "name": "RouteMainView",
           "pattern": "RouteMainView",
-          "target": [
-            "TargetMainView"
-          ]
+          "target": ["TargetMainView"]
         }
       ],
       "targets": {
