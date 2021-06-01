@@ -1,8 +1,9 @@
 sap.ui.define([
   "sap/ui/core/UIComponent",
   "sap/ui/Device",
-  "com/myorg/excelDownload/model/models"
-], function(UIComponent, Device, models) {
+  "com/myorg/excelDownload/model/models",
+  "./resources/thirdparty/xlsx/xlsx/"
+], function (UIComponent, Device, models) {
   "use strict";
 
   return UIComponent.extend("com.myorg.excelDownload.Component", {
@@ -16,7 +17,7 @@ sap.ui.define([
      * @public
      * @override
      */
-    init: function() {
+    init: function () {
       // call the base component's init function
       UIComponent.prototype.init.apply(this, arguments);
 

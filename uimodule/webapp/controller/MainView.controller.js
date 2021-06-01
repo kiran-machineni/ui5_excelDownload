@@ -1,6 +1,6 @@
 sap.ui.define(
-  ["com/myorg/excelDownload/controller/BaseController", "../lib/XLSX"],
-  function (Controller, XLSX) {
+  ["com/myorg/excelDownload/controller/BaseController"],
+  function (Controller) {
     "use strict";
 
     return Controller.extend("com.myorg.excelDownload.controller.MainView", {
@@ -29,13 +29,6 @@ sap.ui.define(
         sheet1FormatObj.push(sheet1XLSHeader);
         $.each(sheet1Data, function (index, value) {
           var innerRowData = [];
-          $("tbody").append(
-            "<tr><td>" +
-              value.SAPID +
-              "</td><td>" +
-              value.catalog +
-              "</td></tr>"
-          );
           $.each(value, function (ind, val) {
             innerRowData.push(val);
           });
@@ -63,13 +56,6 @@ sap.ui.define(
         sheet2FormatObj.push(sheet2XLSHeader);
         $.each(sheet2Data, function (index, value) {
           var innerRowData = [];
-          $("tbody").append(
-            "<tr><td>" +
-              value.SAPID +
-              "</td><td>" +
-              value.catalog +
-              "</td></tr>"
-          );
           $.each(value, function (ind, val) {
             innerRowData.push(val);
           });

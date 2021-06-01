@@ -1,5 +1,5 @@
 {
-  "name": "excelDownload",
+  "name": "exceldownload",
   "version": "0.0.1",
   "scripts": {
     "start": "ui5 serve --config=uimodule/ui5.yaml  --open index.html",
@@ -25,10 +25,11 @@
   },
   "ui5": {
     "dependencies": [
-      "ui5-middleware-livereload"
+      "ui5-middleware-livereload",
+      "xlsx"
     ]
   },
   "dependencies": {
-    "xlsx": "^0.14.2"
+    "xlsx": "^0.17.0"
   }
 }

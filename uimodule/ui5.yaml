@@ -21,3 +21,21 @@ server:
       configuration:
         port: 35729
         path: uimodule/webapp
+---
+# --- for using 3party libraris
+specVersion: '2.2'
+kind: extension
+type: project-shim
+metadata:
+  name: thirdparty # this can be your project shim name
+shims:
+  configurations:
+   xlsx: 
+      specVersion: '2.2'
+      type: module # Use module type
+      metadata:
+        name:   xlsx
+      resources:
+        configuration:
+          paths:
+            /resources/thirdparty/xlsx/: ''  # location where modules are stored
